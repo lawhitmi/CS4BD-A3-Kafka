@@ -1,0 +1,4 @@
+#Zookeeper
+sudo docker run -d --name zookeeper2 --network kafka-net -p2181:2181 zookeeper:3.4
+#kafka
+sudo docker run -d --name kafka2 --network kafka-net --env ZOOKEEPER_IP=zookeeper2 -p9092:9092 ches/kafka
