@@ -10,6 +10,6 @@
     - Employs one-record-at-a-time processing to achieve millisecond processing latency, and supports event-time based windowing operations with out-of-order arrival of records.
     - Offers necessary stream processing primitives, along with a high-level Streams DSL and a low-level Processor API.
 
-    The difference with Kafka Streams is its seamless integration with Kafka.  The API is build directly on top of the Kafka producers and consumers, providing a simple interface to these lower level APIs.
+    The difference with Kafka Streams that it is a library which allows the stream processing to be embedded within the application.  This allows packaging and deployment as part of your application.
 
 # 3) Yes
