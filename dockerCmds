@@ -1,3 +1,4 @@
+sudo docker create network kafka-net
 #Zookeeper
 sudo docker run -d --name zookeeper2 --network kafka-net -p2181:2181 zookeeper:3.4
 #kafka
